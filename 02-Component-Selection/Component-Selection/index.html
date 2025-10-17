@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#examples" class="md-skip">
+        <a href="#component-1-load-cell-weight-sensor" class="md-skip">
           Skip to content
         </a>
       
@@ -548,35 +548,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#component-1-load-cell-weight-sensor" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 1
+      Component 1 — Load Cell (Weight Sensor)
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#component-2-signal-conditioning-adc" class="md-nav__link">
     <span class="md-ellipsis">
-      Style 2
+      Component 2 — Signal Conditioning &amp; ADC
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#component-3-mechanical-mount-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component 3 — Mechanical Mount / Platform
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-4-filtering-noise-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component 4 — Filtering &amp; Noise Reduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-5-temperature-compensation-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component 5 — Temperature Compensation / Calibration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-design-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Design Summary
+    </span>
+  </a>
   
 </li>
       
@@ -815,35 +836,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#component-1-load-cell-weight-sensor" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 1
+      Component 1 — Load Cell (Weight Sensor)
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#component-2-signal-conditioning-adc" class="md-nav__link">
     <span class="md-ellipsis">
-      Style 2
+      Component 2 — Signal Conditioning &amp; ADC
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#component-3-mechanical-mount-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component 3 — Mechanical Mount / Platform
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-4-filtering-noise-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component 4 — Filtering &amp; Noise Reduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-5-temperature-compensation-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component 5 — Temperature Compensation / Calibration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-design-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Design Summary
+    </span>
+  </a>
   
 </li>
       
@@ -870,107 +912,234 @@
   
 
 
-  <h1>Component Selection Example</h1>
-
-<h2 id="examples">Examples</h2>
-<h3 id="style-1">Style 1</h3>
-<blockquote>
-<p>This is the example found in the assignment, uses more html</p>
-</blockquote>
-<p><em>Table 1: Example component selection</em></p>
-<p><strong>External Clock Module</strong></p>
+<h2 id="component-1-load-cell-weight-sensor">Component 1 — Load Cell (Weight Sensor)</h2>
 <table>
 <thead>
 <tr>
 <th><strong>Solution</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Photo</strong></th>
+<th><strong>Link &amp; Cost</strong></th>
 <th><strong>Pros</strong></th>
 <th><strong>Cons</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a><br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></td>
-<td>* Inexpensive[^1]<br>* Compatible with PSoC<br>* Meets surface mount constraint of project</td>
-<td>* Requires external components and support circuitry for interface<br>* Needs special PCB layout.</td>
+<td><strong>SparkFun Load Cell – 10 kg Straight Bar (TAL220)</strong></td>
+<td>Off-the-shelf</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://cdn.sparkfun.com//assets/parts/1/2/5/7/9/14727-Load_Cell_-_10kg__Straight_Bar__TAL220__-_01.jpg" data-desc-position="bottom"><img alt="TAL220" src="https://cdn.sparkfun.com//assets/parts/1/2/5/7/9/14727-Load_Cell_-_10kg__Straight_Bar__TAL220__-_01.jpg"></a></td>
+<td><a href="https://www.sparkfun.com/products/14727">SparkFun Load Cell – 10 kg (TAL220)</a> — <em>$9.95</em></td>
+<td>Accurate (±0.02%), easy to mount, widely supported</td>
+<td>Limited to 10 kg, off-center loads reduce accuracy</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a><br>* Option 2. <br>* CTX936TR-ND surface mount oscillator <br>* $1/each <br>* <a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></td>
-<td>* Outputs a square wave <br>* Stable over operating temperature <br> * Direct interface with PSoC (no external circuitry required) range</td>
-<td>* More expensive <br>* Slow shipping speed</td>
+<td><strong>Phidgets Micro Load Cell (0–50 kg)</strong></td>
+<td>Off-the-shelf</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.phidgets.com/media/catalog/product/cache/4/image/800x800/040ec09b1e35df139433887a97daa66f/3/1/3133_0_PhidgetMicroLoadCell50kg.jpg" data-desc-position="bottom"><img alt="Phidgets" src="https://www.phidgets.com/media/catalog/product/cache/4/image/800x800/040ec09b1e35df139433887a97daa66f/3/1/3133_0_PhidgetMicroLoadCell50kg.jpg"></a></td>
+<td><a href="https://www.phidgets.com/?tier=3&amp;catid=9&amp;pcid=7&amp;prodid=641">Phidgets Micro Load Cell (0–50 kg)</a> — <em>$19.95</em></td>
+<td>High range, compact, reliable industrial supplier</td>
+<td>Slightly expensive for prototype use</td>
+</tr>
+<tr>
+<td><strong>DIY Strain Gauge Beam (Custom Aluminum Bar)</strong></td>
+<td>Custom</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://upload.wikimedia.org/wikipedia/commons/3/3f/Strain_gauge_bridge_measurement_principle.svg" data-desc-position="bottom"><img alt="DIY" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Strain_gauge_bridge_measurement_principle.svg"></a></td>
+<td>Custom-built using foil strain gauges (e.g., Omega SG-3/350-LY11) — <em>~$8 per gauge + materials</em></td>
+<td>Fully customizable; educational; low part cost</td>
+<td>Requires bonding, Wheatstone bridge wiring, and calibration</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
-<h3 id="style-2">Style 2</h3>
-<blockquote>
-<p>Also acceptable, more markdown friendly</p>
-</blockquote>
-<p><strong>External Clock Module</strong></p>
-<ol>
-<li>
-<p>XC1259TR-ND surface mount crystal</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
-<ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
-</ul>
+<p><strong>Optimal Choice:</strong> <em>SparkFun Load Cell – 10 kg (TAL220)</em><br>
+<strong>Rationale:</strong> Provides adequate range, linear response, easy integration with HX711 ADC, and strong documentation for rapid prototyping at low cost.</p>
+<hr>
+<h2 id="component-2-signal-conditioning-adc">Component 2 — Signal Conditioning &amp; ADC</h2>
 <table>
 <thead>
 <tr>
-<th>Pros</th>
-<th>Cons</th>
+<th><strong>Solution</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Photo</strong></th>
+<th><strong>Link &amp; Cost</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td><strong>HX711 24-bit Load Cell Amplifier</strong></td>
+<td>Off-the-shelf</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://cdn.sparkfun.com//assets/parts/1/0/7/7/3/13879-HX711_Load_Cell_Amplifier_-_01.jpg" data-desc-position="bottom"><img alt="HX711" src="https://cdn.sparkfun.com//assets/parts/1/0/7/7/3/13879-HX711_Load_Cell_Amplifier_-_01.jpg"></a></td>
+<td><a href="https://www.sparkfun.com/products/13879">SparkFun HX711 Load Cell Amplifier</a> — <em>$6.95</em></td>
+<td>High resolution (24 bit), simple interface, community support</td>
+<td>Limited sample rate (~10 Hz), basic filtering only</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td><strong>TI ADS1232 Precision ADC</strong></td>
+<td>Off-the-shelf</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.ti.com/graphics/folders/partimages/ADS1232.jpg" data-desc-position="bottom"><img alt="ADS1232" src="https://www.ti.com/graphics/folders/partimages/ADS1232.jpg"></a></td>
+<td><a href="https://www.ti.com/product/ADS1232">TI ADS1232 24-bit ADC</a> — <em>$14.00</em></td>
+<td>Very low noise; configurable gain; industrial grade</td>
+<td>More complex interface; requires breakout board</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td><strong>INA125 Instrumentation Amplifier + MCU ADC</strong></td>
+<td>Custom</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.ti.com/graphics/folders/partimages/INA125.jpg" data-desc-position="bottom"><img alt="INA125" src="https://www.ti.com/graphics/folders/partimages/INA125.jpg"></a></td>
+<td><a href="https://www.ti.com/product/INA125">Texas Instruments INA125</a> — <em>$7.20</em></td>
+<td>Adjustable gain; integrated excitation source</td>
+<td>Needs extra ADC and calibration; more wiring</td>
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<p>CTX936TR-ND surface mount oscillator</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
-<ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
-</ul>
+<p><strong>Optimal Choice:</strong> <em>HX711 24-bit Load Cell Amplifier</em><br>
+<strong>Rationale:</strong> Offers an excellent trade-off between performance and simplicity. The integrated differential amplifier and digital output minimize wiring complexity and interface directly with the microcontroller.</p>
+<hr>
+<h2 id="component-3-mechanical-mount-platform">Component 3 — Mechanical Mount / Platform</h2>
 <table>
 <thead>
 <tr>
-<th>Pros</th>
-<th>Cons</th>
+<th><strong>Solution</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Photo</strong></th>
+<th><strong>Link &amp; Cost</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Outputs a square wave</td>
-<td>More expensive</td>
+<td><strong>Single-Point Mount Plate (Aluminum, 100 mm × 80 mm)</strong></td>
+<td>Off-the-shelf</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://m.media-amazon.com/images/I/61zIiq1sOAL._AC_SL1500_.jpg" data-desc-position="bottom"><img alt="Plate" src="https://m.media-amazon.com/images/I/61zIiq1sOAL._AC_SL1500_.jpg"></a></td>
+<td><a href="https://www.adafruit.com/product/1516">Adafruit Aluminum Load Cell Mounting Plate</a> — <em>$6.95</em></td>
+<td>Ready to use; ensures even load transfer; compact</td>
+<td>May need modification for can geometry</td>
 </tr>
 <tr>
-<td>Stable over operating temperature</td>
-<td>Slow shipping speed</td>
+<td><strong>Custom 3D-Printed Mount (PLA or PETG)</strong></td>
+<td>Custom</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://upload.wikimedia.org/wikipedia/commons/a/a0/3D_Printer_Example_Part.jpg" data-desc-position="bottom"><img alt="3D Mount" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/3D_Printer_Example_Part.jpg"></a></td>
+<td>Self-designed &amp; printed — <em>~$2.00 material</em></td>
+<td>Fully customizable; lightweight</td>
+<td>May deform under continuous load; lower stiffness</td>
 </tr>
 <tr>
-<td>Direct interface with PSoC (no external circuitry required) range</td>
-<td></td>
+<td><strong>Steel Bracket Assembly (fabricated)</strong></td>
+<td>Custom</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://upload.wikimedia.org/wikipedia/commons/f/fc/Steel_bracket.jpg" data-desc-position="bottom"><img alt="Steel Bracket" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Steel_bracket.jpg"></a></td>
+<td>Fabricated from sheet steel — <em>~$5.00 material</em></td>
+<td>Extremely durable; stable support</td>
+<td>Requires machining/welding tools</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ol>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
+<p><strong>Optimal Choice:</strong> <em>Single-Point Aluminum Mount Plate</em><br>
+<strong>Rationale:</strong> Provides a strong, flat mounting interface that matches the chosen load cell geometry and minimizes mechanical error. No fabrication required, ideal for prototyping and repeatability.</p>
+<hr>
+<h2 id="component-4-filtering-noise-reduction">Component 4 — Filtering &amp; Noise Reduction</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Solution</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Photo</strong></th>
+<th><strong>Link &amp; Cost</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>RC Low-Pass Analog Filter (10 Hz cutoff)</strong></td>
+<td>Custom</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://upload.wikimedia.org/wikipedia/commons/5/5f/Lowpass_Filter_RC.svg" data-desc-position="bottom"><img alt="RC Filter" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Lowpass_Filter_RC.svg"></a></td>
+<td>Built from R=1 kΩ, C=15 µF — <em>&lt;$1 total</em></td>
+<td>Cheap and effective; simple design</td>
+<td>Fixed cutoff; minor phase delay</td>
+</tr>
+<tr>
+<td><strong>Digital Moving-Average Filter (Firmware)</strong></td>
+<td>Custom</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://upload.wikimedia.org/wikipedia/commons/2/26/Moving_average_filter_concept.svg" data-desc-position="bottom"><img alt="Code" src="https://upload.wikimedia.org/wikipedia/commons/2/26/Moving_average_filter_concept.svg"></a></td>
+<td>Implemented in code — <em>no cost</em></td>
+<td>Simple to code; smooths readings</td>
+<td>Adds lag; requires tuning window size</td>
+</tr>
+<tr>
+<td><strong>HX711 Internal Filtering</strong></td>
+<td>Off-the-shelf (built-in)</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://cdn.sparkfun.com//assets/parts/1/0/7/7/3/13879-HX711_Load_Cell_Amplifier_-_01.jpg" data-desc-position="bottom"><img alt="HX711 Filter" src="https://cdn.sparkfun.com//assets/parts/1/0/7/7/3/13879-HX711_Load_Cell_Amplifier_-_01.jpg"></a></td>
+<td>Integrated in HX711 hardware</td>
+<td>Built-in digital filter; no design needed</td>
+<td>Limited customization</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Optimal Choice:</strong> <em>Digital Moving-Average Filter (Firmware)</em><br>
+<strong>Rationale:</strong> Allows flexible smoothing and noise reduction without additional hardware. Parameters can be adjusted dynamically to balance response time and stability.</p>
+<hr>
+<h2 id="component-5-temperature-compensation-calibration">Component 5 — Temperature Compensation / Calibration</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Solution</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Photo</strong></th>
+<th><strong>Link &amp; Cost</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Built-in Load Cell Temperature Compensation</strong></td>
+<td>Off-the-shelf</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://cdn.sparkfun.com/assets/learn_tutorials/5/1/2/TAL220.jpg" data-desc-position="bottom"><img alt="TAL220 datasheet" src="https://cdn.sparkfun.com/assets/learn_tutorials/5/1/2/TAL220.jpg"></a></td>
+<td>Included with <a href="https://www.sparkfun.com/products/14727">TAL220 Load Cell</a></td>
+<td>Factory-compensated for 10–40 °C range</td>
+<td>Slight offset drift outside range</td>
+</tr>
+<tr>
+<td><strong>Software Tare Function</strong></td>
+<td>Custom</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://upload.wikimedia.org/wikipedia/commons/1/19/Tare_button.jpg" data-desc-position="bottom"><img alt="Tare Button" src="https://upload.wikimedia.org/wikipedia/commons/1/19/Tare_button.jpg"></a></td>
+<td>Implemented via MCU routine</td>
+<td>Easy, user-friendly; resets zero offset</td>
+<td>Must be triggered manually or periodically</td>
+</tr>
+<tr>
+<td><strong>External Thermistor Feedback (10 kΩ NTC)</strong></td>
+<td>Custom</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://cdn.sparkfun.com//assets/parts/1/1/2/3/4/11234-01.jpg" data-desc-position="bottom"><img alt="Thermistor" src="https://cdn.sparkfun.com//assets/parts/1/1/2/3/4/11234-01.jpg"></a></td>
+<td><a href="https://www.sparkfun.com/products/11234">SparkFun 10 kΩ NTC Thermistor</a> — <em>$1.00</em></td>
+<td>Enables temperature correction in code</td>
+<td>Requires calibration curve and data logging</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Optimal Choice:</strong> <em>Built-in Load Cell Compensation + Software Tare</em><br>
+<strong>Rationale:</strong> Adequate thermal stability for indoor operation. Adding a software tare routine periodically eliminates drift without adding hardware complexity.</p>
+<hr>
+<h1 id="final-design-summary"><strong>Final Design Summary</strong></h1>
+<table>
+<thead>
+<tr>
+<th><strong>Subsystem</strong></th>
+<th><strong>Chosen Components</strong></th>
+<th><strong>Justification</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weight Sensing Subsystem</strong></td>
+<td>SparkFun TAL220 10 kg Load Cell + HX711 ADC + Aluminum Mount Plate + Digital Moving Average Filter + Software Tare</td>
+<td>This combination provides high accuracy (±0.02%), simple integration, low cost (&lt; $25 total), and reliable performance for detecting trash bin fill weight.</td>
+</tr>
+</tbody>
+</table>
+<hr>
 
 
 
