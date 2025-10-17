@@ -2,57 +2,75 @@
 title: Component Selection Example
 ---
 
-## Examples
+## Component 1 — Load Cell (Weight Sensor)
 
-### Style 1
+| **Solution** | **Type** | **Photo** | **Link & Cost** | **Pros** | **Cons** |
+|---------------|----------|------------|------------------|-----------|-----------|
+| **SparkFun Load Cell – 10 kg Straight Bar (TAL220)** | Off-the-shelf | ![TAL220](https://cdn.sparkfun.com//assets/parts/1/2/5/7/9/14727-Load_Cell_-_10kg__Straight_Bar__TAL220__-_01.jpg) | [SparkFun Load Cell – 10 kg (TAL220)](https://www.sparkfun.com/products/14727) — *$9.95* | Accurate (±0.02%), easy to mount, widely supported | Limited to 10 kg, off-center loads reduce accuracy |
+| **Phidgets Micro Load Cell (0–50 kg)** | Off-the-shelf | ![Phidgets](https://www.phidgets.com/media/catalog/product/cache/4/image/800x800/040ec09b1e35df139433887a97daa66f/3/1/3133_0_PhidgetMicroLoadCell50kg.jpg) | [Phidgets Micro Load Cell (0–50 kg)](https://www.phidgets.com/?tier=3&catid=9&pcid=7&prodid=641) — *$19.95* | High range, compact, reliable industrial supplier | Slightly expensive for prototype use |
+| **DIY Strain Gauge Beam (Custom Aluminum Bar)** | Custom | ![DIY](https://upload.wikimedia.org/wikipedia/commons/3/3f/Strain_gauge_bridge_measurement_principle.svg) | Custom-built using foil strain gauges (e.g., Omega SG-3/350-LY11) — *~$8 per gauge + materials* | Fully customizable; educational; low part cost | Requires bonding, Wheatstone bridge wiring, and calibration |
 
-> This is the example found in the assignment, uses more html
+**Optimal Choice:** *SparkFun Load Cell – 10 kg (TAL220)*  
+**Rationale:** Provides adequate range, linear response, easy integration with HX711 ADC, and strong documentation for rapid prototyping at low cost.
 
-*Table 1: Example component selection*
+---
 
-**External Clock Module**
+## Component 2 — Signal Conditioning & ADC
 
-| **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](image1.png)<br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* Inexpensive[^1]<br>\* Compatible with PSoC<br>\* Meets surface mount constraint of project                                               | \* Requires external components and support circuitry for interface<br>\* Needs special PCB layout. |
-| ![](image3.png)<br>\* Option 2. <br>\* CTX936TR-ND surface mount oscillator <br>\* $1/each <br>\* [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940) | \* Outputs a square wave <br>\* Stable over operating temperature <br> \* Direct interface with PSoC (no external circuitry required) range | * More expensive <br>\* Slow shipping speed                                                         |
+| **Solution** | **Type** | **Photo** | **Link & Cost** | **Pros** | **Cons** |
+|---------------|----------|------------|------------------|-----------|-----------|
+| **HX711 24-bit Load Cell Amplifier** | Off-the-shelf | ![HX711](https://cdn.sparkfun.com//assets/parts/1/0/7/7/3/13879-HX711_Load_Cell_Amplifier_-_01.jpg) | [SparkFun HX711 Load Cell Amplifier](https://www.sparkfun.com/products/13879) — *$6.95* | High resolution (24 bit), simple interface, community support | Limited sample rate (~10 Hz), basic filtering only |
+| **TI ADS1232 Precision ADC** | Off-the-shelf | ![ADS1232](https://www.ti.com/graphics/folders/partimages/ADS1232.jpg) | [TI ADS1232 24-bit ADC](https://www.ti.com/product/ADS1232) — *$14.00* | Very low noise; configurable gain; industrial grade | More complex interface; requires breakout board |
+| **INA125 Instrumentation Amplifier + MCU ADC** | Custom | ![INA125](https://www.ti.com/graphics/folders/partimages/INA125.jpg) | [Texas Instruments INA125](https://www.ti.com/product/INA125) — *$7.20* | Adjustable gain; integrated excitation source | Needs extra ADC and calibration; more wiring |
 
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
+**Optimal Choice:** *HX711 24-bit Load Cell Amplifier*  
+**Rationale:** Offers an excellent trade-off between performance and simplicity. The integrated differential amplifier and digital output minimize wiring complexity and interface directly with the microcontroller.
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+---
 
-### Style 2
+## Component 3 — Mechanical Mount / Platform
 
-> Also acceptable, more markdown friendly
+| **Solution** | **Type** | **Photo** | **Link & Cost** | **Pros** | **Cons** |
+|---------------|----------|------------|------------------|-----------|-----------|
+| **Single-Point Mount Plate (Aluminum, 100 mm × 80 mm)** | Off-the-shelf | ![Plate](https://m.media-amazon.com/images/I/61zIiq1sOAL._AC_SL1500_.jpg) | [Adafruit Aluminum Load Cell Mounting Plate](https://www.adafruit.com/product/1516) — *$6.95* | Ready to use; ensures even load transfer; compact | May need modification for can geometry |
+| **Custom 3D-Printed Mount (PLA or PETG)** | Custom | ![3D Mount](https://upload.wikimedia.org/wikipedia/commons/a/a0/3D_Printer_Example_Part.jpg) | Self-designed & printed — *~$2.00 material* | Fully customizable; lightweight | May deform under continuous load; lower stiffness |
+| **Steel Bracket Assembly (fabricated)** | Custom | ![Steel Bracket](https://upload.wikimedia.org/wikipedia/commons/f/fc/Steel_bracket.jpg) | Fabricated from sheet steel — *~$5.00 material* | Extremely durable; stable support | Requires machining/welding tools |
 
-**External Clock Module**
+**Optimal Choice:** *Single-Point Aluminum Mount Plate*  
+**Rationale:** Provides a strong, flat mounting interface that matches the chosen load cell geometry and minimizes mechanical error. No fabrication required, ideal for prototyping and repeatability.
 
-1. XC1259TR-ND surface mount crystal
+---
 
-    ![](image1.png)
+## Component 4 — Filtering & Noise Reduction
 
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+| **Solution** | **Type** | **Photo** | **Link & Cost** | **Pros** | **Cons** |
+|---------------|----------|------------|------------------|-----------|-----------|
+| **RC Low-Pass Analog Filter (10 Hz cutoff)** | Custom | ![RC Filter](https://upload.wikimedia.org/wikipedia/commons/5/5f/Lowpass_Filter_RC.svg) | Built from R=1 kΩ, C=15 µF — *<$1 total* | Cheap and effective; simple design | Fixed cutoff; minor phase delay |
+| **Digital Moving-Average Filter (Firmware)** | Custom | ![Code](https://upload.wikimedia.org/wikipedia/commons/2/26/Moving_average_filter_concept.svg) | Implemented in code — *no cost* | Simple to code; smooths readings | Adds lag; requires tuning window size |
+| **HX711 Internal Filtering** | Off-the-shelf (built-in) | ![HX711 Filter](https://cdn.sparkfun.com//assets/parts/1/0/7/7/3/13879-HX711_Load_Cell_Amplifier_-_01.jpg) | Integrated in HX711 hardware | Built-in digital filter; no design needed | Limited customization |
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+**Optimal Choice:** *Digital Moving-Average Filter (Firmware)*  
+**Rationale:** Allows flexible smoothing and noise reduction without additional hardware. Parameters can be adjusted dynamically to balance response time and stability.
 
-1. CTX936TR-ND surface mount oscillator
+---
 
-    ![](image3.png)
+## Component 5 — Temperature Compensation / Calibration
 
-    * $1/each
-    * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
+| **Solution** | **Type** | **Photo** | **Link & Cost** | **Pros** | **Cons** |
+|---------------|----------|------------|------------------|-----------|-----------|
+| **Built-in Load Cell Temperature Compensation** | Off-the-shelf | ![TAL220 datasheet](https://cdn.sparkfun.com/assets/learn_tutorials/5/1/2/TAL220.jpg) | Included with [TAL220 Load Cell](https://www.sparkfun.com/products/14727) | Factory-compensated for 10–40 °C range | Slight offset drift outside range |
+| **Software Tare Function** | Custom | ![Tare Button](https://upload.wikimedia.org/wikipedia/commons/1/19/Tare_button.jpg) | Implemented via MCU routine | Easy, user-friendly; resets zero offset | Must be triggered manually or periodically |
+| **External Thermistor Feedback (10 kΩ NTC)** | Custom | ![Thermistor](https://cdn.sparkfun.com//assets/parts/1/1/2/3/4/11234-01.jpg) | [SparkFun 10 kΩ NTC Thermistor](https://www.sparkfun.com/products/11234) — *$1.00* | Enables temperature correction in code | Requires calibration curve and data logging |
 
-    | Pros                                                              | Cons                |
-    | ----------------------------------------------------------------- | ------------------- |
-    | Outputs a square wave                                             | More expensive      |
-    | Stable over operating temperature                                 | Slow shipping speed |
-    | Direct interface with PSoC (no external circuitry required) range |
+**Optimal Choice:** *Built-in Load Cell Compensation + Software Tare*  
+**Rationale:** Adequate thermal stability for indoor operation. Adding a software tare routine periodically eliminates drift without adding hardware complexity.
 
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
+---
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+# **Final Design Summary**
+
+| **Subsystem** | **Chosen Components** | **Justification** |
+|----------------|----------------------|-------------------|
+| **Weight Sensing Subsystem** | SparkFun TAL220 10 kg Load Cell + HX711 ADC + Aluminum Mount Plate + Digital Moving Average Filter + Software Tare | This combination provides high accuracy (±0.02%), simple integration, low cost (< $25 total), and reliable performance for detecting trash bin fill weight. |
+
+---
