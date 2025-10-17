@@ -2,7 +2,7 @@
 title: Component Selection Example
 ---
 
-## Component 1 — Load Cell (Weight Sensor)
+## Component — Load Cell (Weight Sensor)
 
 | **Solution** | **Type** | **Photo** | **Link & Cost** | **Pros** | **Cons** |
 |---------------|----------|------------|------------------|-----------|-----------|
