@@ -15,6 +15,8 @@ title: Component Selection Example
 
 ---
 
+## Component 2 — 5V Voltage Regulator
+
 | **Solution** | **Type** | **Photo** | **Link & Cost** | **Pros** | **Cons** |
 |---------------|-----------|------------|------------------|-----------|-----------|
 | **LM7805** | Linear Voltage Regulator (Fixed 5 V) | ![LM7805](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/207/638/1N5229BFS_sml.jpg) | [Texas Instruments LM7805 – Digi-Key](https://www.digikey.com/en/products/detail/texas-instruments/LM7805CT-NOPB/458603) — **$0.50 – $1.00 USD** | The LM7805 is a very reliable and easy-to-use voltage regulator that provides a stable 5 V output with minimal external components. It includes built-in protection features such as thermal shutdown and short-circuit safety, making it a great choice for simple projects and educational use. | However, it is inefficient when the input voltage is much higher than 5 V, since the excess energy is dissipated as heat. It also typically requires a heatsink for high current applications and cannot supply more than about 1 A of current. |
