@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#component-load-cell-weight-sensor" class="md-skip">
+        <a href="#component-1-load-cell-weight-sensor" class="md-skip">
           Skip to content
         </a>
       
@@ -548,9 +548,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#component-load-cell-weight-sensor" class="md-nav__link">
+  <a href="#component-1-load-cell-weight-sensor" class="md-nav__link">
     <span class="md-ellipsis">
-      Component — Load Cell (Weight Sensor)
+      Component 1 — Load Cell (Weight Sensor)
     </span>
   </a>
   
@@ -791,9 +791,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#component-load-cell-weight-sensor" class="md-nav__link">
+  <a href="#component-1-load-cell-weight-sensor" class="md-nav__link">
     <span class="md-ellipsis">
-      Component — Load Cell (Weight Sensor)
+      Component 1 — Load Cell (Weight Sensor)
     </span>
   </a>
   
@@ -824,7 +824,7 @@
 
   <h1>Component Selection Example</h1>
 
-<h2 id="component-load-cell-weight-sensor">Component — Load Cell (Weight Sensor)</h2>
+<h2 id="component-1-load-cell-weight-sensor">Component 1 — Load Cell (Weight Sensor)</h2>
 <table>
 <thead>
 <tr>
@@ -866,6 +866,46 @@
 <p><strong>Optimal Choice:</strong> <em>SparkFun Load Cell – 50 kg (Generic)</em><br>
 <strong>Rationale:</strong> Provides adequate range, linear response, easy integration with HX711 ADC, and low cost.</p>
 <hr>
+<table>
+<thead>
+<tr>
+<th><strong>Solution</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Photo</strong></th>
+<th><strong>Link &amp; Cost</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>LM7805</strong></td>
+<td>Linear Voltage Regulator (Fixed 5 V)</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.ti.com/content/dam/ticom/images/products/power/linear-regulators/lm7805k-steel-ns.jpg" data-desc-position="bottom"><img alt="LM7805" src="https://www.ti.com/content/dam/ticom/images/products/power/linear-regulators/lm7805k-steel-ns.jpg"></a></td>
+<td><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM7805CT-NOPB/458603">Texas Instruments LM7805 – Digi-Key</a> — <strong>$0.50 – $1.00 USD</strong></td>
+<td>The LM7805 is a very reliable and easy-to-use voltage regulator that provides a stable 5 V output with minimal external components. It includes built-in protection features such as thermal shutdown and short-circuit safety, making it a great choice for simple projects and educational use.</td>
+<td>However, it is inefficient when the input voltage is much higher than 5 V, since the excess energy is dissipated as heat. It also typically requires a heatsink for high current applications and cannot supply more than about 1 A of current.</td>
+</tr>
+<tr>
+<td><strong>AMS1117-5.0</strong></td>
+<td>Low-Dropout (LDO) Linear Regulator (Fixed 5 V)</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://cdn.sparkfun.com//assets/parts/1/1/8/7/3/14950-AMS1117-5V.jpg" data-desc-position="bottom"><img alt="AMS1117" src="https://cdn.sparkfun.com//assets/parts/1/1/8/7/3/14950-AMS1117-5V.jpg"></a></td>
+<td><a href="https://www.sparkfun.com/products/14950">AMS1117-5.0 – SparkFun</a> — <strong>$0.30 – $0.80 USD</strong></td>
+<td>The AMS1117-5.0 is a compact low-dropout regulator that provides 5 V output with only about a 1.1 V difference required between input and output. It’s inexpensive, simple to use, and suitable for space-constrained projects that don’t need high current output.</td>
+<td>Despite its small size, it suffers from poor heat dissipation and limited current handling (around 800 mA). It’s also not very efficient when used with higher input voltages, and can overheat if pushed too hard.</td>
+</tr>
+<tr>
+<td><strong>LM2596</strong></td>
+<td>Switching (Buck) Regulator (Adjustable or Fixed 5 V)</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://cdn.sparkfun.com//assets/parts/1/1/8/7/8/13892-01.jpg" data-desc-position="bottom"><img alt="LM2596" src="https://cdn.sparkfun.com//assets/parts/1/1/8/7/8/13892-01.jpg"></a></td>
+<td><a href="https://www.amazon.com/dp/B00NJ9BJ8S">LM2596 DC-DC Buck Converter Module – Amazon</a> — <strong>$1.50 – $3.00 USD</strong></td>
+<td>The LM2596 is a highly efficient switching regulator that can provide up to 3 A of current with efficiency levels above 85%. It works well with a wide range of input voltages and is ideal for powering larger loads or battery-powered systems where efficiency is important.</td>
+<td>On the downside, it produces more electrical noise than linear regulators, making it less suitable for sensitive analog circuits. It also requires more space and components, and its wiring is slightly more complex compared to simple linear regulators.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Optimal Choice:</strong> <em>LM2596 DC-DC Buck Converter Module</em></p>
+<p><strong>Rationale:</strong> The LM2596 was chosen as the optimal solution because it combines high efficiency with the ability to deliver more current (up to 3 A) while minimizing heat generation. Unlike linear regulators such as the LM7805 or AMS1117, it does not waste large amounts of energy as heat, making it ideal for systems powered by batteries or higher-voltage sources. Additionally, it supports a wide input voltage range, which provides flexibility for different power sources. While it produces more ripple than linear regulators, this can be managed with additional filtering if needed, and its overall efficiency and current capacity make it the best choice for most embedded projects.</p>
 
 
 
