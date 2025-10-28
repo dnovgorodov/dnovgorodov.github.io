@@ -26,3 +26,16 @@ title: Component Selection
 **Optimal Choice:** *LM2596 DC-DC Buck Converter Module*
 
 **Rationale:** The LM2596 was chosen as the optimal solution because it combines high efficiency with the ability to deliver more current (up to 3 A) while minimizing heat generation. Unlike linear regulators such as the LM7805 or AMS1117, it does not waste large amounts of energy as heat, making it ideal for systems powered by batteries or higher-voltage sources. Additionally, it supports a wide input voltage range, which provides flexibility for different power sources. While it produces more ripple than linear regulators, this can be managed with additional filtering if needed, and its overall efficiency and current capacity make it the best choice for most embedded projects.
+
+
+## Component 3 — Operational Amplifier
+
+| Solution | Photo | Link & Cost | Pros | Cons |
+|----------|-------|-------------|------|------|
+| **MCP6004** | ![MCP6004](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/927/070/150%7EC04-005%7EP%2C-PD%7E14_sml.jpg) | [MCP6004](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060) - $0.59 | - Low power consumption (100 µA typical) <br> - Rail-to-rail input/output <br> - Wide supply voltage range (1.8V to 6.0V) | - High input offset voltage (~4.5 mV) <br> - Not suitable for low-level differential signals like load cells |
+| **AD620** | ![AD620ANZ](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/930/391/505%7EN-8%7EN%7E8-Top_sml.jpg) | [AD620ANZ](https://www.analog.com/en/products/ad620.html) - $17.22 | - Low input offset voltage (~50 µV) <br> - High common-mode rejection ratio (CMRR) <br> - Adjustable gain via external resistor | - Higher cost <br> - Single-channel amplifier |
+| **INA125** | ![INA125](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/300/716/770/296%7E4040047-6%7ED%7E16_sml.jpg) | [INA125](https://www.digikey.com/en/products/detail/texas-instruments/INA125UA/300986) - $4.00 | - Integrated bridge excitation <br> - Low input offset voltage <br> - High CMRR <br> - Single-channel amplifier | - Slightly higher cost <br> - Less manual control over excitation voltage |
+
+**Optimal Choice:** *AD620ANZ*
+
+**Rationale:** Low offset voltage; more free-range control over reference voltage.
