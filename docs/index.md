@@ -1,23 +1,14 @@
 ---
 title: Welcome
-tags:
-- tag1
-- tag2
 ---
 
-## Hello, my name is Damian.
 
-* List item 1.
-* List item 2.
+<p align="center">
+  <font size = "1">Damian Novgorodov</font><br>
+</p>
 
-name | description
------|------------
-damian | one
-dan    | two
-ben    | three
+Introduction
 
-### This is a subheading.
+Project Summary
 
-1. step 1
-2. step 2
-3. step 3
+My Contribution
