@@ -6,7 +6,7 @@ title: Welcome
 <center>
 <font size= "6">Damian Novgorodov Datasheet</font><br>
 as part of<br>
-<font size= "8"> Smart Trash Can</font><br>
+<font size= "8"> AutoCan</font><br>
 for<br>
 <font size= "5"> Team 202 </font><br>
 
