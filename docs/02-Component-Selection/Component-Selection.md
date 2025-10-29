@@ -24,9 +24,9 @@ title: Component Selection
 | AMS1117-5.0 | ![AMS1117-5.0](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/227/499/MFG_5272_AMS1117-5.0_primary_sml%28200x200%29.jpg) | [AMS1117-5.0](https://www.digikey.com/en/products/detail/evvo/AMS1117-5-0/24370130) - $0.12 | - Lower dropout (around 1.1 V) <br>- Very cheap & compact (SMD) | - Max ~1 A only <br>- Can run hot at high load |
 | UA7805CKCS | ![UA7805CKCS](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/300/702/797/296%7E4204749%7EKCS%7E3_sml.jpg) | [UA7805CKCS](https://www.digikey.com/en/products/detail/texas-instruments/UA7805CKCSE3/1494012) - $1.34 | - Handles up to 1.5 A <br>- Strong protection and reliability (classic 78xx design) | - Still high dropout (around 2 V) <br>- More expensive than AMS1117 |
 
-**Optimal Choice:** *LM2596 DC-DC Buck Converter Module*
+**Optimal Choice:** *LM7805T*
 
-**Rationale:** The LM2596 was chosen as the optimal solution because it combines high efficiency with the ability to deliver more current (up to 3 A) while minimizing heat generation. Unlike linear regulators such as the LM7805 or AMS1117, it does not waste large amounts of energy as heat, making it ideal for systems powered by batteries or higher-voltage sources. Additionally, it supports a wide input voltage range, which provides flexibility for different power sources. While it produces more ripple than linear regulators, this can be managed with additional filtering if needed, and its overall efficiency and current capacity make it the best choice for most embedded projects.
+**Rationale:** Offers fairly good stability; has pretty good current capacity; and is fairly reliable at a low cost.
 
 
 ## Component 3 — Operational Amplifier
