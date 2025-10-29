@@ -3,21 +3,25 @@ title: Welcome
 ---
 
 
-<p align="center"><font size = "50">Damian Novgorodov</font></p>
-<p align="center"><font size = "20">as part of</font></p>
-<p align="center"><font size = "75">Smart Trash Can</font></p>
-<p align="center"><font size = "20">for</font></p>
-<p align="center"><font size = "30">Team 202</font></p>
+<center>
+<font size= "6">Damian Novgorodov Datasheet</font><br>
+as part of<br>
+<font size= "8"> Smart Trash Can</font><br>
+for<br>
+<font size= "5"> Team 202 </font><br>
 
-<font size = "30">Introduction</font>
+**Submission: October, 28, 2025**
+</center>
+
+# Introduction
 
 - This individual datasheet will cover details about my subsystem which will play a role in my team's larger project: the Smart Trash Can. My subsystem is the trash weight-sensing subsystem.
 
-<font size = "30">Project Summary</font>
+# Project Summary
 
 - The project that my team and I are working on is building a smart trash can. Our trash can combines features such as sensors to track the weight and height of the trash, alerting the user when either has been exceeded, motion sensors to allow the user to open the trash can without touching it, etc.
 
-<font size = "30">My Contribution</font>
+# My Contribution
 
 As stated previously, I was responsible for designing the weight-tracking subsystem.
 
