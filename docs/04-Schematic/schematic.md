@@ -4,12 +4,10 @@ title: Schematic
 
 ## Overview
 
-This schematic is design to support .... (highlight functionally, power, and controller).
+This schematic is designed to detect the weight of the trash in our smart trash can.
 
 
-![schematic](SubsystemDesign.png){style width:"350" height:"300;"}
-**Figure ##:** Showing a example schematic.
-
+![schematic](SubsystemDesign.png)
 
 ## Resouces
 
