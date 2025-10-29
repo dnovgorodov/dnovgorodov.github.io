@@ -6,22 +6,23 @@ title: Component Selection
 
 | **Solution** | **Photo** | **Link & Cost** | **Pros** | **Cons** |
 |---------------|------------|------------------|-----------|-----------|
-| **SparkFun Load Cell – 50 kg (Generic)** | ![Generic](https://www.sparkfun.com/media/catalog/product/cache/a793f13fd3d678cea13d28206895ba0c/1/0/10245-01a.jpg) | [SparkFun Load Cell – 50 kg (Generic)](https://www.sparkfun.com/load-sensor-50kg-generic.html) — *$6.25* | Accurate (±0.02%), easy to mount, widely supported | Off-center loads reduce accuracy |
-| **50kg Strain Gauge** | ![Strain Gauge](https://i.ebayimg.com/images/g/x~oAAOSw79Vm86qD/s-l1600.webp) | [Phidgets Micro Load Cell (0–50 kg)](https://www.ebay.com/itm/286077381781) — *$6.99* | High range, compact, reliable industrial supplier | Seems to be a lot of wiring |
-| **Velleman WPSE471 Load Cell + ADC** | ![Velleman Load Cell](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/008/957/MFG_WPSE471_sml%28200x200%29.jpg) | [Velleman Load Cell](https://www.digikey.com/en/products/detail/velleman/WPSE471/25965862) — *~$11.95 per gauge + materials* | Comes with ADC and is designed to work with load cells | Limited to 44 lbs; little more expensive than the other options |
+| **SparkFun Load Cell – 50 kg (Generic)** | ![Generic](https://www.sparkfun.com/media/catalog/product/cache/a793f13fd3d678cea13d28206895ba0c/1/0/10245-01a.jpg) | [SparkFun Load Cell – 50 kg (Generic)](https://www.sparkfun.com/load-sensor-50kg-generic.html) - $6.25 | Accurate (±0.02%), easy to mount, widely supported | Off-center loads reduce accuracy |
+| **50kg Strain Gauge** | ![Strain Gauge](https://i.ebayimg.com/images/g/x~oAAOSw79Vm86qD/s-l1600.webp) | [Phidgets Micro Load Cell (0–50 kg)](https://www.ebay.com/itm/286077381781) - $6.99 | High range, compact, reliable industrial supplier | Seems to be a lot of wiring |
+| **Velleman WPSE471 Load Cell + ADC** | ![Velleman Load Cell](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/008/957/MFG_WPSE471_sml%28200x200%29.jpg) | [Velleman Load Cell](https://www.digikey.com/en/products/detail/velleman/WPSE471/25965862) - $11.95 | Comes with ADC and is designed to work with load cells | Limited to 44 lbs; little more expensive than the other options |
 
-**Optimal Choice:** *SparkFun Load Cell – 50 kg (Generic)*  
+**Optimal Choice:** *SparkFun Load Cell – 50 kg (Generic)*
+
 **Rationale:** Provides adequate range, linear response, easy integration with HX711 ADC, and low cost.
 
 ---
 
 ## Component 2 — 5V Voltage Regulator
 
-| **Solution** | **Photo** | **Link & Cost** | **Pros** | **Cons** |
-|---------------|------------|------------------|-----------|-----------|
-| **LM7805** | ![LM7805](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/100/625/374/296%7ET03B%7ENDE%7E3_sml.jpg) | [Texas Instruments LM7805 – Digi-Key](https://www.digikey.com/en/products/detail/texas-instruments/LM7805CT-NOPB/3901929) — **$0.50 – $1.00 USD** | The LM7805 is a very reliable and easy-to-use voltage regulator that provides a stable 5 V output with minimal external components. It includes built-in protection features such as thermal shutdown and short-circuit safety, making it a great choice for simple projects and educational use. | However, it is inefficient when the input voltage is much higher than 5 V, since the excess energy is dissipated as heat. It also typically requires a heatsink for high current applications and cannot supply more than about 1 A of current. |
-| **AMS1117-5.0** | ![AMS1117](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/227/499/MFG_5272_AMS1117-5.0_primary_sml%28200x200%29.jpg) | [AMS1117-5.0 – SparkFun](https://www.digikey.com/en/products/detail/evvo/AMS1117-5-0/24370130) — **$0.30 – $0.80 USD** | The AMS1117-5.0 is a compact low-dropout regulator that provides 5 V output with only about a 1.1 V difference required between input and output. It’s inexpensive, simple to use, and suitable for space-constrained projects that don’t need high current output. | Despite its small size, it suffers from poor heat dissipation and limited current handling (around 800 mA). It’s also not very efficient when used with higher input voltages, and can overheat if pushed too hard. |
-| **LM2596** | ![LM2596](https://i.ebayimg.com/images/g/r6EAAOSww-1k6F9U/s-l1600.webp) | [LM2596 DC-DC Buck Converter Module](https://www.ti.com/lit/ds/symlink/lm2596.pdf) — **$1.50 – $3.00 USD** | The LM2596 is a highly efficient switching regulator that can provide up to 3 A of current with efficiency levels above 85%. It works well with a wide range of input voltages and is ideal for powering larger loads or battery-powered systems where efficiency is important. | On the downside, it produces more electrical noise than linear regulators, making it less suitable for sensitive analog circuits. It also requires more space and components, and its wiring is slightly more complex compared to simple linear regulators. |
+| Solution | Photo | Link & Cost | Pros | Cons |
+|---|---|---|---|---|
+| LM7805T | ![LM7805T](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/100/625/374/296%7ET03B%7ENDE%7E3_sml.jpg) | [LM7805T](https://www.digikey.com/en/products/detail/texas-instruments/LM7805CT-NOPB/3901929) - $0.55 | - Robust and widely used <br>- Built-in thermal & short-circuit protection | - High dropout ~2 V <br>- Inefficient (wastes voltage as heat) |
+| AMS1117-5.0 | ![AMS1117-5.0](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/227/499/MFG_5272_AMS1117-5.0_primary_sml%28200x200%29.jpg) | [AMS1117-5.0](https://www.digikey.com/en/products/detail/evvo/AMS1117-5-0/24370130) - $0.12 | - Lower dropout (around 1.1 V) <br>- Very cheap & compact (SMD) | - Max ~1 A only <br>- Can run hot at high load |
+| UA7805CKCS | ![UA7805CKCS](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/300/702/797/296%7E4204749%7EKCS%7E3_sml.jpg) | [UA7805CKCS](https://www.digikey.com/en/products/detail/texas-instruments/UA7805CKCSE3/1494012) - $1.34 | - Handles up to 1.5 A <br>- Strong protection and reliability (classic 78xx design) | - Still high dropout (around 2 V) <br>- More expensive than AMS1117 |
 
 **Optimal Choice:** *LM2596 DC-DC Buck Converter Module*
 
@@ -33,8 +34,8 @@ title: Component Selection
 | Solution | Photo | Link & Cost | Pros | Cons |
 |----------|-------|-------------|------|------|
 | **MCP6004** | ![MCP6004](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/927/070/150%7EC04-005%7EP%2C-PD%7E14_sml.jpg) | [MCP6004](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060) - $0.59 | - Low power consumption (100 µA typical) <br> - Rail-to-rail input/output <br> - Wide supply voltage range (1.8V to 6.0V) | - High input offset voltage (~4.5 mV) <br> - Not suitable for low-level differential signals like load cells |
-| **AD620** | ![AD620ANZ](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/930/391/505%7EN-8%7EN%7E8-Top_sml.jpg) | [AD620ANZ](https://www.analog.com/en/products/ad620.html) - $17.22 | - Low input offset voltage (~50 µV) <br> - High common-mode rejection ratio (CMRR) <br> - Adjustable gain via external resistor | - Higher cost <br> - Single-channel amplifier |
-| **INA125** | ![INA125](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/300/716/770/296%7E4040047-6%7ED%7E16_sml.jpg) | [INA125](https://www.digikey.com/en/products/detail/texas-instruments/INA125UA/300986) - $4.00 | - Integrated bridge excitation <br> - Low input offset voltage <br> - High CMRR <br> - Single-channel amplifier | - Slightly higher cost <br> - Less manual control over reference voltage |
+| **AD620** | ![AD620ANZ](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/930/391/505%7EN-8%7EN%7E8-Top_sml.jpg) | [AD620ANZ](https://www.digikey.com/en/products/detail/analog-devices-inc/AD620ANZ/750967) - $17.22 | - Low input offset voltage (~50 µV) <br> - High common-mode rejection ratio (CMRR) <br> - Adjustable gain via external resistor | - Higher cost <br> - Single-channel amplifier |
+| **INA125UA** | ![INA125UA](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/300/716/770/296%7E4040047-6%7ED%7E16_sml.jpg) | [INA125UA](https://www.digikey.com/en/products/detail/texas-instruments/INA125UA/300986) - $7.16 | - Integrated bridge excitation <br> - Low input offset voltage <br> - High CMRR <br> - Single-channel amplifier | - Slightly higher cost <br> - Less manual control over reference voltage |
 
 **Optimal Choice:** *AD620ANZ*
 
