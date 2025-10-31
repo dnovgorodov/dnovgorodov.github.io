@@ -3,7 +3,7 @@ title: Component Selection
 ---
 
 ## Overview
-- During my component selection process, I considered many factors: cost, use, effectiveness, accuracy, etc. For the load cell (or weight sensor), I chose the SparkFun 50kg Load Cell because of its impressive weight-detection capacity, accurate detection through ADC signaling, and relatively low cost. For the 5V voltage regulator, I chose the LM7805T due to my familiarity with it, ease-of-use, and once again, low cost. For the op-amp, I had originally chosen the AD620ANZ due to its accuracy and low offset voltage, but eventually decided to do with the INA333 due to its lower quiescent current and lower cost.
+During my component selection process, I considered many factors: cost, use, effectiveness, accuracy, etc. For the load cell (or weight sensor), I chose the SparkFun 50kg Load Cell because of its impressive weight-detection capacity, accurate detection through ADC signaling, and relatively low cost. For the 5V voltage regulator, I chose the LM7805T due to my familiarity with it, ease-of-use, and once again, low cost. For the op-amp, I had originally chosen the AD620ANZ due to its accuracy and low offset voltage, but eventually decided to do with the INA333 due to its lower quiescent current and lower cost.
 
 ## Component 1 — Load Cell (Weight Sensor)
 
