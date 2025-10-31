@@ -12,7 +12,7 @@ title: Component Selection
 
 **Optimal Choice:** *SparkFun Load Cell – 50 kg (Generic)*
 
-**Rationale:** Provides adequate range, linear response, easy integration with HX711 ADC, and low cost.
+**Rationale:** Provides great range, linear response, easy integration with ADC, and low cost.
 
 ---
 
@@ -34,9 +34,9 @@ title: Component Selection
 | Solution | Photo | Link & Cost | Pros | Cons |
 |----------|-------|-------------|------|------|
 | **MCP6004** | ![MCP6004](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/927/070/150%7EC04-005%7EP%2C-PD%7E14_sml.jpg) | [MCP6004](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060) - $0.59 | - Low power consumption (100 µA typical) <br> - Rail-to-rail input/output <br> - Wide supply voltage range (1.8V to 6.0V) | - High input offset voltage (~4.5 mV) <br> - Not suitable for low-level differential signals like load cells |
-| **AD620** | ![AD620ANZ](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/930/391/505%7EN-8%7EN%7E8-Top_sml.jpg) | [AD620ANZ](https://www.digikey.com/en/products/detail/analog-devices-inc/AD620ANZ/750967) - $17.22 | - Low input offset voltage (~50 µV) <br> - High common-mode rejection ratio (CMRR) <br> - Adjustable gain via external resistor | - Higher cost <br> - Single-channel amplifier |
-| **INA125UA** | ![INA125UA](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/300/716/770/296%7E4040047-6%7ED%7E16_sml.jpg) | [INA125UA](https://www.digikey.com/en/products/detail/texas-instruments/INA125UA/300986) - $7.16 | - Integrated bridge excitation <br> - Low input offset voltage <br> - High CMRR <br> - Single-channel amplifier | - Slightly higher cost <br> - Less manual control over reference voltage |
+| **AD620ANZ** | ![AD620ANZ](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/930/391/505%7EN-8%7EN%7E8-Top_sml.jpg) | [AD620ANZ](https://www.digikey.com/en/products/detail/analog-devices-inc/AD620ANZ/750967) - $17.22 | - Low input offset voltage (~50 µV) <br> - High common-mode rejection ratio (CMRR) <br> - Adjustable gain via external resistor | - Higher cost <br> - Single-channel amplifier |
+| **INA333** | ![INA333](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/300/760/263/296%7E4073329%7EDGK%7E8_sml.jpg) | [INA333](https://www.digikey.com/en/products/detail/texas-instruments/INA333AIDGKR/1886116) - $4.54 | - Lower offset voltage (+/- 25 nanoAmps) <br> - Lower quiescent current (1mA) <br> - More cost effective | - Lower maximum supply voltage <br> - Lower bandwidth |
 
-**Optimal Choice:** *AD620ANZ*
+**Optimal Choice:** *INA333*
 
-**Rationale:** Low offset voltage; more free-range control over reference voltage.
+**Rationale:** Low offset voltage; low quiescent current; lower cost than AD620ANZ.
