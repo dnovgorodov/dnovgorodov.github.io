@@ -13,4 +13,6 @@ title: PCB
 
 [Back Side of PCB](SubsystemBackLayer.pdf)
 
+[Project Files](SubsystemDesign.zip)
+
 [Gerber Files](SubsystemGerberFiles.zip)
