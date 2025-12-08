@@ -29,3 +29,7 @@ As stated previously, I was responsible for designing the weight-tracking subsys
 - To view my component selection, please visit this page: [Component Selection](02-Component-Selection/Component-Selection.md)
 - To view the schematic of my subsystem, please visit this page: [Schematic](04-Schematic/schematic.md)
 - To view my schematic's power budget, please visit this page: [Power Budget](05-Power-Budget/Power-Budget.md)
+
+# Link to team webpage
+
+Here is a link to my team's website: [Team 202](https://egr304-2025-f-202.github.io/)
