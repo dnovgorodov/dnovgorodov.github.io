@@ -11,9 +11,9 @@ During my component selection process, I considered many factors: cost, use, eff
 |---------------|------------|------------------|-----------|-----------|
 | **SparkFun Load Cell – 50 kg (Generic)** | ![Generic](https://www.sparkfun.com/media/catalog/product/cache/a793f13fd3d678cea13d28206895ba0c/1/0/10245-01a.jpg) | [SparkFun Load Cell – 50 kg (Generic)](https://www.sparkfun.com/load-sensor-50kg-generic.html) - $6.25 | Accurate (±0.02%), easy to mount, widely supported | Off-center loads reduce accuracy |
 | **50kg Strain Gauge** | ![Strain Gauge](https://i.ebayimg.com/images/g/x~oAAOSw79Vm86qD/s-l1600.webp) | [Phidgets Micro Load Cell (0–50 kg)](https://www.ebay.com/itm/286077381781) - $6.99 | High range, compact, reliable industrial supplier | Seems to be a lot of wiring |
-| **Velleman WPSE471 Load Cell + ADC** | ![Velleman Load Cell](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/008/957/MFG_WPSE471_sml%28200x200%29.jpg) | [Velleman Load Cell](https://www.digikey.com/en/products/detail/velleman/WPSE471/25965862) - $11.95 | Comes with ADC and is designed to work with load cells | Limited to 44 lbs; little more expensive than the other options |
+| **TAL220** | ![TAL220](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/008/957/MFG_WPSE471_sml%28200x200%29.jpg) | [TAL220](https://www.sparkfun.com/load-cell-10kg-straight-bar-tal220.html) - $12.95 | Comes with ADC and is designed to work with load cells | Limited to 10kg; little more expensive than the other options |
 
-**Optimal Choice:** *SparkFun Load Cell – 50 kg (Generic)*
+**Optimal Choice:** *TAL220*
 
 **Rationale:** Provides great range, linear response, easy integration with ADC, and low cost.
 
