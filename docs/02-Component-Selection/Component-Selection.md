@@ -43,3 +43,12 @@ During my component selection process, I considered many factors: cost, use, eff
 **Optimal Choice:** *INA333*
 
 **Rationale:** Low offset voltage; low quiescent current; lower cost than AD620ANZ.
+
+
+## Summary of main components
+
+| Component | Name |
+| --------- | ---- |
+| Load Cell | TAL220 |
+| Voltage Regulator | LM7805 |
+| Op-Amp | MCP6004 |
