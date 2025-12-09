@@ -1,1 +1,3 @@
+## Possible improvements
 
+If I could make an improvement, or "Version 2.0" to my hardware design, the main thing I would change is I would use a different op-amp, namely, an instrumentation op-amp. The reason I did not use that in the first place is because unfortunately, due to the time constraints, it did not come in time, so I just had to use the regular op-amp from class. I also believe I forgot to include some decoupling capacitors into my PCB design, so I would likely also keep that in mind for next time and add those in. Other than that, I am honestly not sure what I would change. My subsystem was not too complicated and everything worked as expected.
